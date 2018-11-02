@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		30EE7FCC21497A2F00C818FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FCB21497A2F00C818FD /* AppDelegate.swift */; };
-		30EE7FCE21497A2F00C818FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FCD21497A2F00C818FD /* ViewController.swift */; };
+		30EE7FCE21497A2F00C818FD /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FCD21497A2F00C818FD /* TVC.swift */; };
 		30EE7FD121497A2F00C818FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EE7FCF21497A2F00C818FD /* Main.storyboard */; };
 		30EE7FD421497A2F00C818FD /* binary_counter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FD221497A2F00C818FD /* binary_counter.xcdatamodeld */; };
 		30EE7FD621497A3000C818FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EE7FD521497A3000C818FD /* Assets.xcassets */; };
 		30EE7FD921497A3000C818FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30EE7FD721497A3000C818FD /* LaunchScreen.storyboard */; };
 		30EE7FE421497A3000C818FD /* binary_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FE321497A3000C818FD /* binary_counterTests.swift */; };
 		30EE7FEF21497A3000C818FD /* binary_counterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FEE21497A3000C818FD /* binary_counterUITests.swift */; };
+		30EE7FFD21497A9000C818FD /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FFC21497A9000C818FD /* CustomCell.swift */; };
+		30EE7FFF214987D400C818FD /* AddSubtractDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE7FFE214987D400C818FD /* AddSubtractDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		30EE7FC821497A2F00C818FD /* binary_counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = binary_counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EE7FCB21497A2F00C818FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30EE7FCD21497A2F00C818FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30EE7FCD21497A2F00C818FD /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
 		30EE7FD021497A2F00C818FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30EE7FD321497A2F00C818FD /* binary_counter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = binary_counter.xcdatamodel; sourceTree = "<group>"; };
 		30EE7FD521497A3000C818FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		30EE7FEA21497A3000C818FD /* binary_counterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = binary_counterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EE7FEE21497A3000C818FD /* binary_counterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binary_counterUITests.swift; sourceTree = "<group>"; };
 		30EE7FF021497A3000C818FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EE7FFC21497A9000C818FD /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		30EE7FFE214987D400C818FD /* AddSubtractDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubtractDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				30EE7FCB21497A2F00C818FD /* AppDelegate.swift */,
-				30EE7FCD21497A2F00C818FD /* ViewController.swift */,
+				30EE7FCD21497A2F00C818FD /* TVC.swift */,
 				30EE7FCF21497A2F00C818FD /* Main.storyboard */,
+				30EE7FFC21497A9000C818FD /* CustomCell.swift */,
+				30EE7FFE214987D400C818FD /* AddSubtractDelegate.swift */,
 				30EE7FD521497A3000C818FD /* Assets.xcassets */,
 				30EE7FD721497A3000C818FD /* LaunchScreen.storyboard */,
 				30EE7FDA21497A3000C818FD /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30EE7FCE21497A2F00C818FD /* ViewController.swift in Sources */,
+				30EE7FCE21497A2F00C818FD /* TVC.swift in Sources */,
 				30EE7FD421497A2F00C818FD /* binary_counter.xcdatamodeld in Sources */,
+				30EE7FFF214987D400C818FD /* AddSubtractDelegate.swift in Sources */,
+				30EE7FFD21497A9000C818FD /* CustomCell.swift in Sources */,
 				30EE7FCC21497A2F00C818FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
